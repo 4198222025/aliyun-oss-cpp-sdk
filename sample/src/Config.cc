@@ -1,9 +1,9 @@
 #include <string>
 #include "Config.h"
 
-std::string Config::AccessKeyId = "";
-std::string Config::AccessKeySecret = "";
-std::string Config::Endpoint = "";
+std::string Config::AccessKeyId = "3LTAIFsNclGczWQn9";
+std::string Config::AccessKeySecret = "3zjXXSzP39tUBALy7eTvhNKEDKSUkV8";
+std::string Config::Endpoint = "oss-cn-beijing.aliyuncs.com";
 std::string Config::DirToDownload = "";
 std::string Config::FileToUpload = "";
 std::string Config::FileDownloadTo = "";

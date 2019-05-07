@@ -91,6 +91,17 @@ void ObjectSample::PutObjectFromFile()
     }
 }
 
+void ObjectSample::PutObjectFromFile(std::string filePath)
+{	
+	auto outcome = client->PutObject(bucket_, "dddd.png", filePath);
+	if (outcome.isSuccess()) {
+		std::cout << __FUNCTION__ << " success, ETag:" << outcome.result().ETag() << std::endl;
+	}
+	else {
+		PrintError(__FUNCTION__, outcome.error());
+	}
+}
+
 void ObjectSample::GetObjectToBuffer()
 {
     GetObjectRequest request(bucket_, "PutObjectFromBuffer");

@@ -10,6 +10,7 @@ public:
     void PutFolder();
     void PutObjectFromBuffer();
     void PutObjectFromFile();
+	void PutObjectFromFile(std::string filePaht);
     void GetObjectToBuffer();
     void GetObjectToFile();
     void DeleteObject();
